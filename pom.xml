@@ -41,6 +41,7 @@
             <executions>
               <execution>
                 <id>generate-rpm</id>
+                <phase>compile</phase>
                 <goals>
                   <goal>rpm</goal>
                 </goals>
