@@ -1,4 +1,4 @@
-node('ci-community') {
+node('ci-community-docker') {
   
   stage 'Checkout'
   checkout scm
