@@ -15,7 +15,7 @@
   <properties>
     <summary>dcs-sen2cor</summary>
     <description>dcs-sen2cor</description>
-    <community>emathot</community>
+    <community>hydro-tep</community>
     <yumRepo>terradue</yumRepo>
   </properties>
   <scm>
@@ -24,6 +24,16 @@
     <url>https://github.com/ec-ecopotential/dcs-sen2cor</url>
     <tag>HEAD</tag>
   </scm>
+  <repositories>
+    <repository>
+      <id>store.terradue.com</id>
+      <name>store.terradue.com-releases</name>
+      <url>http://store.terradue.com/api/any</url>
+      <releases>
+        <checksumPolicy>warn</checksumPolicy>
+      </releases>
+    </repository>
+  </repositories>
   <profiles>
     <profile>
       <id>package-app</id>
