@@ -169,7 +169,7 @@ equation) but with exponent b=1.0 (lambda less than 720 nm), and b=3/4 (lambda g
           
       </defaultParameters>
       <defaultJobconf>
-        <property id="mapred.task.timeout">9900000000</property>
+        <property id="mapred.task.timeout">990000000</property>
       </defaultJobconf>
     </jobTemplate>
   </jobTemplates>

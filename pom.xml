@@ -60,6 +60,7 @@
                   <requires>
                     <require>miniconda</require>
                     <require>openjpeg2</require>
+                    <require>tree</require>
                   </requires>
                 </configuration>
               </execution>
