@@ -1,4 +1,4 @@
-node('ci-community') {
+node('ci-community-docker') {
   
   stage 'Checkout'
   checkout scm
@@ -7,6 +7,6 @@ node('ci-community') {
   env.PATH = "${tool 'apache-maven-3.0.5'}/bin:${env.PATH}"
   
   stage 'Package and Deploy'
-  sh 'mvn deploy -D release=true'
+  sh 'mvn -B deploy'
 
 }

@@ -8,15 +8,15 @@
   <parent>
     <groupId>com.terradue</groupId>
     <artifactId>dcs-python-parent</artifactId>
-    <version>2.0.0</version>
+    <version>2.1.0-docker-SNAPSHOT</version>
   </parent>
   <description>dcs-sen2cor</description>
-  <version>1.0</version>
+  <version>1.1</version>
   <properties>
     <summary>dcs-sen2cor</summary>
     <description>dcs-sen2cor</description>
-    <community>ec-ecopotential</community>
-    <yumRepo>ec-ecopotential</yumRepo>
+    <community>hydro-tep</community>
+    <yumRepo>terradue</yumRepo>
   </properties>
   <scm>
     <connection>scm:git:ssh://git@github.com/ec-ecopotential/dcs-sen2cor</connection>
@@ -24,6 +24,16 @@
     <url>https://github.com/ec-ecopotential/dcs-sen2cor</url>
     <tag>HEAD</tag>
   </scm>
+  <repositories>
+    <repository>
+      <id>store.terradue.com</id>
+      <name>store.terradue.com-releases</name>
+      <url>http://store.terradue.com/api/any</url>
+      <releases>
+        <checksumPolicy>warn</checksumPolicy>
+      </releases>
+    </repository>
+  </repositories>
   <profiles>
     <profile>
       <id>package-app</id>
@@ -41,6 +51,7 @@
             <executions>
               <execution>
                 <id>generate-rpm</id>
+                <phase>compile</phase>
                 <goals>
                   <goal>rpm</goal>
                 </goals>
@@ -49,6 +60,7 @@
                   <requires>
                     <require>miniconda</require>
                     <require>openjpeg2</require>
+                    <require>tree</require>
                   </requires>
                 </configuration>
               </execution>
