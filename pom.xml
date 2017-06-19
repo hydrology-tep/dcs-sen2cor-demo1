@@ -15,7 +15,7 @@
   <properties>
     <summary>dcs-sen2cor</summary>
     <description>dcs-sen2cor</description>
-    <community>hydro-tep</community>
+    <community>demo1</community>
     <yumRepo>terradue</yumRepo>
   </properties>
   <scm>
